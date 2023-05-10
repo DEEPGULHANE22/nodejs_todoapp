@@ -13,7 +13,7 @@ const schema= new mongoose.Schema({
     },
     password:{
         type: String,
-        select:false,
+        select:false,   
         required:true,
 
     },
@@ -24,6 +24,5 @@ const schema= new mongoose.Schema({
 })
 
 const User = mongoose.model("User", schema)
-
 
 export default User;

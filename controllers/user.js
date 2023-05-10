@@ -97,9 +97,6 @@ export const register = async (req, res) => {
     catch (error) {
         next(error)
     }
-
-
-
 }
 
 
