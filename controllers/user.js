@@ -48,7 +48,7 @@ export const login = async (req, res) => {
 }
 
 
-export const logout = async (req, res) => {
+export const logout = async (req, res,next) => {
     try {
         res.status(200).cookie("token", "", { 
             expires: new Date.now(),
